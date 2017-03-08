@@ -7,6 +7,7 @@ class ntp::params {
   $service_ensure = 'running'
   $service_enable = true
   $service_hasretart = true
+  $service_hasrestart = true
   $service_hasstatus = true
   
   $service_name = $facts['os']['family'] ? {
